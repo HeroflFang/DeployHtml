@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+    html{height:100%}
+    body{height:100%;margin:0px;padding:0px}
+    #container{height:100%}
+</style>
+<script language="javascript" src="http://webapi.amap.com/maps?v=1.2&key=ed71727b23148d499d486caf21387f43"></script>
+<script language="javascript">
+    var mapObj;
+    function mapInit(){
+        var mapOptions = {
+　　　　　　 center:new AMap.LngLat(116.397428,39.90923),
+        　　level:13
+        };
+        mapObj = new AMap.Map("container", mapOptions);
+    }
+</script>
+</head>
+<body onLoad="mapInit()">
+    <div id="container" > </div>
+</body>
+</html>
